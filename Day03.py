@@ -2,7 +2,6 @@
 Advent of Code Day 03
 """
 
-from ast import Break
 import string
 
 rugsack = open("Day03-input.txt",'r').read().split("\n")
