@@ -11,7 +11,7 @@ head, tail = [0,0], [0,0]
 
 for line in input:
     [dir, step] = line.split()
-    for i in range(int(step)):
+    for _ in range(int(step)):
         head_old = head
         head = [head[0] + action[dir][0], head[1] + action[dir][1]]
         if abs(head[0] - tail[0]) > 1 or abs(head[1] - tail[1]) > 1:
@@ -24,7 +24,7 @@ T_loc = set((0,0))
 
 for line in input:
     [dir, step] = line.split()
-    for i in range(int(step)):
+    for _ in range(int(step)):
         rope[1] = [rope[1][0] + action[dir][0], rope[1][1] + action[dir][1]]
         for idx in range(2,11):
             prev = rope[idx-1]
