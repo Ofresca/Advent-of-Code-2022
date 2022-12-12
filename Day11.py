@@ -3,8 +3,6 @@ from pprint import pprint
 
 input = open("Day11-input.txt",'r').read().split('\n\n')
 
-
-
 class Monkey:
 
     def __init__(self, operation, test, if_true, if_false, items = []):
@@ -28,7 +26,6 @@ class Monkey:
             self.inspect += 1
         self.items = []
     
-
 apes = []
 divisor = 1
 
