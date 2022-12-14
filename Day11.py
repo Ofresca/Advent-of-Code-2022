@@ -39,6 +39,7 @@ for line in input:
     if_false = properties[5].split()[-1]
 
     monkey = Monkey(operation, test, if_true, if_false, items)
+    
     divisor *= test
     apes.append(monkey)
 
